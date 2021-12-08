@@ -13,10 +13,10 @@ const App = () => {
   ]);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen">
       <Header />
 
-      <div className="flex">
+      <div className="flex flex-auto">
         <Sidebar />
         {mainContent}
       </div>

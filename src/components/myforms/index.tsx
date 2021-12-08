@@ -1,5 +1,7 @@
+import ShowData from "./showdata";
+
 const MyForms = () => {
-  return <div>MyForms</div>;
+  return <ShowData />;
 };
 
 export default MyForms;

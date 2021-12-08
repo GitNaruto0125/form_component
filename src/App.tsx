@@ -4,6 +4,7 @@ import Header from "./components/layout/header";
 import Sidebar from "./components/layout/sidebar";
 // import components
 import MyForms from "./components/myforms";
+import "tailwindcss/tailwind.css";
 
 const App = () => {
   const mainContent = useRoutes([
@@ -12,11 +13,14 @@ const App = () => {
   ]);
 
   return (
-    <>
+    <div className="flex flex-col">
       <Header />
-      <Sidebar />
-      {mainContent}
-    </>
+
+      <div className="flex">
+        <Sidebar />
+        {mainContent}
+      </div>
+    </div>
   );
 };
 
